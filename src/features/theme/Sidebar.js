@@ -1,19 +1,43 @@
 import React from 'react';
-import { Box, VStack, Text } from '@chakra-ui/react';
+import { Box, VStack, Text, Link } from '@chakra-ui/react';
 
 function Sidebar() {
   return (
-    <Box w="200px" bg="gray.100" h="100vh" p={4}>
-      <VStack spacing={4} align="stretch">
-        <Text fontSize="lg" fontWeight="bold">Menu</Text>
-        <Text>Home</Text>
-        <Text>Schedule</Text>
-        <Text>Recommendation</Text>
-        <Text>Analytics</Text>
-        <Text>Profile</Text>
-        <Text>Inbox</Text>
-        <Text>Themes</Text>
-        <Text>Settings</Text>
+    <Box
+      width={{ base: '100%', md: '250px' }}
+      height={{ base: 'auto', md: '100vh' }}
+      bg="gray.800"
+      color="white"
+      padding="20px"
+    >
+      <Text fontSize="2xl" fontWeight="bold" mb="20px">
+        Logo Here
+      </Text>
+      <VStack align="stretch" spacing={4}>
+        <Link href="#" _hover={{ textDecoration: 'none', bg: 'gray.700' }} padding="10px" borderRadius="md">
+          Home
+        </Link>
+        <Link href="#" _hover={{ textDecoration: 'none', bg: 'gray.700' }} padding="10px" borderRadius="md">
+          Schedule
+        </Link>
+        <Link href="#" _hover={{ textDecoration: 'none', bg: 'gray.700' }} padding="10px" borderRadius="md">
+          Recommendations
+        </Link>
+        <Link href="#" _hover={{ textDecoration: 'none', bg: 'gray.700' }} padding="10px" borderRadius="md">
+          Analytics
+        </Link>
+        <Link href="#" _hover={{ textDecoration: 'none', bg: 'gray.700' }} padding="10px" borderRadius="md">
+          Profile
+        </Link>
+        <Link href="#" _hover={{ textDecoration: 'none', bg: 'gray.700' }} padding="10px" borderRadius="md">
+          Inbox
+        </Link>
+        <Link href="#" _hover={{ textDecoration: 'none', bg: 'gray.700' }} padding="10px" borderRadius="md">
+          Themes
+        </Link>
+        <Link href="#" _hover={{ textDecoration: 'none', bg: 'gray.700' }} padding="10px" borderRadius="md">
+          Settings
+        </Link>
       </VStack>
     </Box>
   );
