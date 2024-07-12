@@ -1,0 +1,14 @@
+/* Additional CSS for finer control over responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+    }
+  
+    .profile-preview {
+      width: 100%;
+      margin: auto;
+      margin-top: 20px;
+    }
+  }
+  
